@@ -2,6 +2,12 @@
 
 Ruby bindings for the Reviews Catcher API.
 
+[![Build Status](https://travis-ci.org/reviewscatcher/reviewscatcher-ruby.svg?branch=master)](https://travis-ci.org/reviewscatcher/reviewscatcher-ruby)
+
+[![Gem Version](https://badge.fury.io/rb/reviews_catcher.svg)](https://badge.fury.io/rb/reviews_catcher)
+
+[![Coverage Status](https://coveralls.io/repos/github/reviewscatcher/reviewscatcher-ruby/badge.svg?branch=master)](https://coveralls.io/github/reviewscatcher/reviewscatcher-ruby?branch=master)
+
 ## Instalation
 
 ```ruby
