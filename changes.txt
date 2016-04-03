@@ -1,3 +1,6 @@
+0.0.2
+ - switched to http lib instead of net/http
+
 0.0.1
  - initial version
  - updated repo url in gemspec
