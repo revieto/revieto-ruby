@@ -7,6 +7,9 @@ require 'pry'
 require 'webmock/rspec'
 require 'forgery'
 
+require 'coveralls'
+Coveralls.wear!
+
 # Library
 require 'reviews_catcher'
 

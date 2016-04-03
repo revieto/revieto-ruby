@@ -1,2 +1,5 @@
 0.0.1
  - initial version
+ - updated repo url in gemspec
+ - configured travis
+ - configured coveralls

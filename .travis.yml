@@ -1,4 +1,15 @@
 language: ruby
+cache: bundler
+
 rvm:
   - 2.3.0
+
+script: 'bundle exec rake'
 before_install: gem install bundler -v 1.11.2
+
+notifications:
+  email:
+    recipients:
+      - bruno@reviewscatcher.io
+    on_failure: change
+    on_success: never

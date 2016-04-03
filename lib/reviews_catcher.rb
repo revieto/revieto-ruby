@@ -7,5 +7,4 @@ require 'reviews_catcher/client'
 require 'reviews_catcher/reviews'
 
 module ReviewsCatcher
-  # Your code goes here...
 end

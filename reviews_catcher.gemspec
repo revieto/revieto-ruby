@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Bruno Valentino']
   spec.email         = ['brunovalentino@gmail.com']
 
-  spec.summary       = %q{Ruby bindings for the reviewscatcher.io API}
-  spec.description   = %q{Ruby bindings for the reviewscatcher.io API}
-  spec.homepage      = 'https://github.com/bvalentino/reviewscatcher-ruby'
+  spec.summary       = %q{Ruby bindings for the ReviewsCatcher API (http://wwww.reviewscatcher.io)}
+  spec.description   = %q{Ruby bindings for the ReviewsCatcher API (http://wwww.reviewscatcher.io)}
+  spec.homepage      = 'https://github.com/reviewscatcher/reviewscatcher-ruby'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -33,4 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'forgery'
+  spec.add_development_dependency 'coveralls'
 end
