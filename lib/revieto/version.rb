@@ -1,3 +1,3 @@
-module ReviewsCatcher
+module Revieto
   VERSION = '0.0.2'
 end

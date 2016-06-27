@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-module ReviewsCatcher
+module Revieto
   describe Client do
     let(:app_id) { 'myappid' }
     let(:api_key) { 'myapikey' }
     let(:client) { Client.new(app_id: app_id, api_key: api_key) }
 
     it 'should set the base url' do
-      expect(client.base_url).to eq('http://myappid.reviewscatcher.io')
+      expect(client.base_url).to eq('https://myappid.revieto.com')
     end
 
     it 'should raise on nil app_id' do
@@ -23,11 +23,11 @@ module ReviewsCatcher
     end
 
     it 'should return an account object' do
-      expect(client.account).to be_a(ReviewsCatcher::Account)
+      expect(client.account).to be_a(Revieto::Account)
     end
 
     it 'should return a reviews object' do
-      expect(client.reviews).to be_a(ReviewsCatcher::Reviews)
+      expect(client.reviews).to be_a(Revieto::Reviews)
     end
   end
 end

@@ -1,4 +1,4 @@
-module ReviewsCatcher
+module Revieto
   class Reviews < BaseService
 
     def name

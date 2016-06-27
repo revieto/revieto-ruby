@@ -1,41 +1,41 @@
-# reviewscatcher-ruby
+# revieto-ruby
 
-Ruby bindings for the Reviews Catcher API.
+Ruby bindings for the Revieto API.
 
-[![Build Status](https://travis-ci.org/reviewscatcher/reviewscatcher-ruby.svg?branch=master)](https://travis-ci.org/reviewscatcher/reviewscatcher-ruby)
+[![Build Status](https://travis-ci.org/revieto/revieto-ruby.svg?branch=master)](https://travis-ci.org/revieto/revieto-ruby)
 
-[![Gem Version](https://badge.fury.io/rb/reviews_catcher.svg)](https://badge.fury.io/rb/reviews_catcher)
+[![Gem Version](https://badge.fury.io/rb/revieto.svg)](https://badge.fury.io/rb/revieto)
 
-[![Coverage Status](https://coveralls.io/repos/github/reviewscatcher/reviewscatcher-ruby/badge.svg?branch=master)](https://coveralls.io/github/reviewscatcher/reviewscatcher-ruby?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/revieto/revieto-ruby/badge.svg?branch=master)](https://coveralls.io/github/revieto/revieto-ruby?branch=master)
 
 ## Instalation
 
 ```ruby
-gem install reviews_catcher
+gem install revieto
 ```
 
 Using bundler:
 
 ```ruby
-gem 'reviews_catcher'
+gem 'revieto'
 ```
 
 ## Configure your client
 
 ```
-reviews_catcher = ReviewsCatcher::Client.new(app_id: 'my_app_id', api_key: 'my_api_key')
+revieto = Revieto::Client.new(app_id: 'my_app_id', api_key: 'my_api_key')
 ```
 
-You can get your `app_id` and `api_key` from your account in Reviews Catcher, in the integration settings page.
+You can get your `app_id` and `api_key` from your account in Revieto, in the integration settings page.
 
 ## Usage
 
 ```ruby
 # Find your account's aggregate rating
-aggregate_rating = reviews_catcher.account.aggregate_rating
+aggregate_rating = revieto.account.aggregate_rating
 
 # Find your account's reviews
-reviews = reviews_catcher.reviews.all
+reviews = revieto.reviews.all
 ```
 
 ## License

@@ -11,7 +11,7 @@ require 'coveralls'
 Coveralls.wear!
 
 # Library
-require 'reviews_catcher'
+require 'revieto'
 
 def test_api_rating(name='Sample account name')
   {
@@ -33,7 +33,7 @@ def test_api_reviews(name='Sample account name')
         'updated_at' => DateTime.now,
         'rating' => rand(0.0...5.0).round(2),
         'name' => Forgery('name').full_name,
-        'profile_picture_url' => 'http://placehold.it/200x200',
+        'profile_picture_url' => 'https://placehold.it/200x200',
         'profile_picture_color' => '#000000',
         'provider' => %w(facebook google yelp survey)[rand(0...3)],
         'external_provider' => true,
@@ -45,7 +45,7 @@ def test_api_reviews(name='Sample account name')
         'updated_at' => DateTime.now,
         'rating' => rand(0.0...5.0).round(2),
         'name' => Forgery('name').full_name,
-        'profile_picture_url' => 'http://placehold.it/200x200',
+        'profile_picture_url' => 'https://placehold.it/200x200',
         'profile_picture_color' => '#000000',
         'provider' => %w(facebook google yelp survey)[rand(0...3)],
         'external_provider' => true,
@@ -57,7 +57,7 @@ def test_api_reviews(name='Sample account name')
         'updated_at' => DateTime.now,
         'rating' => rand(0.0...5.0).round(2),
         'name' => Forgery('name').full_name,
-        'profile_picture_url' => 'http://placehold.it/200x200',
+        'profile_picture_url' => 'https://placehold.it/200x200',
         'profile_picture_color' => '#000000',
         'provider' => %w(facebook google yelp survey)[rand(0...3)],
         'external_provider' => true,

@@ -1,7 +1,7 @@
 require 'http'
 require 'json'
 
-module ReviewsCatcher
+module Revieto
   class InvalidApiRequestError < StandardError; end
   class BaseService
     attr_reader :client

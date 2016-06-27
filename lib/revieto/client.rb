@@ -1,4 +1,4 @@
-module ReviewsCatcher
+module Revieto
   class MisconfiguredClientError < StandardError; end
   class Client
     attr_reader :base_url, :app_id, :api_key
@@ -13,11 +13,11 @@ module ReviewsCatcher
     end
 
     def account
-      @account ||= ReviewsCatcher::Account.new(self)
+      @account ||= Revieto::Account.new(self)
     end
 
     def reviews
-      @reviews ||= ReviewsCatcher::Reviews.new(self)
+      @reviews ||= Revieto::Reviews.new(self)
     end
 
     private
@@ -28,7 +28,7 @@ module ReviewsCatcher
       end
 
       def build_base_url
-        "http://#{@app_id}.reviewscatcher.io"
+        "https://#{@app_id}.revieto.com"
       end
   end
 end

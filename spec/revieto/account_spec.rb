@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module ReviewsCatcher
+module Revieto
   describe Account do
     let(:client) { Client.new(app_id: 'myappid', api_key: 'myapikey') }
 
