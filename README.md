@@ -23,10 +23,10 @@ gem 'revieto'
 ## Configure your client
 
 ```
-revieto = Revieto::Client.new(app_id: 'my_app_id', api_key: 'my_api_key')
+revieto = Revieto::Client.new('my_api_key')
 ```
 
-You can get your `app_id` and `api_key` from your account in Revieto, in the integration settings page.
+You can get your `api_key` from your account in Revieto in the integration settings page.
 
 ## Usage
 

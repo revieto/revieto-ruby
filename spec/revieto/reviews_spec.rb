@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Revieto
   describe Reviews do
-    let(:client) { Client.new(app_id: 'myappid', api_key: 'myapikey') }
+    let(:client) { Client.new('myapikey') }
 
     it 'should return the aggregate rating' do
       api_reviews = test_api_reviews
